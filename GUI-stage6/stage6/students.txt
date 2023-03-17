@@ -1,0 +1,11 @@
+stuId=1,name=李明明,gender=男,school=北京大学,major=软件工程,age=18,city=武汉,phone=13817618878,email=123@qq.com
+stuId=2,name=马铭,gender=男,school=华中师范大学,major=计算机科学与技术,age=27,city=武汉,phone=13827618878,email=123@qq.com
+stuId=3,name=周杰伦,gender=男,school=华中科技大学,major=计算机科学与技术,age=16,city=武汉,phone=13837618878,email=888@qq.com
+stuId=4,name=周杰,gender=男,school=华中科技大学,major=软件工程,age=33,city=武汉,phone=13847618878,email=123@qq.com
+stuId=5,name=陈奕迅,gender=男,school=清华大学,major=计算机科学与技术,age=17,city=武汉,phone=13833618878,email=123@qq.com
+stuId=6,name=蓝若惜,gender=女,school=清华大学,major=计算机科学与技术,age=16,city=武汉,phone=13844328878,email=222@qq.com
+stuId=7,name=苏铭,gender=男,school=复旦大学,major=软件工程,age=43,city=深圳,phone=13523281231,email=555@qq.com
+stuId=8,name=罗峰,gender=男,school=武汉大学,major=机械工程,age=9,city=武汉,phone=13713137631,email=123@qq.com
+stuId=9,name=萧衍,gender=男,school=武汉大学,major=土木工程,age=22,city=北京,phone=13512381293,email=123@qq.com
+stuId=10,name=上官若,gender=男,school=清华大学,major=计算机科学与技术,age=31,city=长沙,phone=13712383128,email=666@qq.com
+stuId=11,name=张三,gender=男,school=武汉理工大学,major=采矿工程,age=22,city=北京,phone=13511111111,email=123@qq.com

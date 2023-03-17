@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage1说明文档/GUI-stage1说明文档.iml" filepath="$PROJECT_DIR$/GUI-stage1说明文档/GUI-stage1说明文档.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage2说明文档/GUI-stage2说明文档.iml" filepath="$PROJECT_DIR$/GUI-stage2说明文档/GUI-stage2说明文档.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage3说明文档/GUI-stage3说明文档.iml" filepath="$PROJECT_DIR$/GUI-stage3说明文档/GUI-stage3说明文档.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage4说明文档/GUI-stage4说明文档.iml" filepath="$PROJECT_DIR$/GUI-stage4说明文档/GUI-stage4说明文档.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage5说明文档/GUI-stage5说明文档.iml" filepath="$PROJECT_DIR$/GUI-stage5说明文档/GUI-stage5说明文档.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage6/GUI-stage6.iml" filepath="$PROJECT_DIR$/GUI-stage6/GUI-stage6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage7/GUI-stage7.iml" filepath="$PROJECT_DIR$/GUI-stage7/GUI-stage7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI-stage8/GUI-stage8.iml" filepath="$PROJECT_DIR$/GUI-stage8/GUI-stage8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Practice1_GUI学生管理系统.iml" filepath="$PROJECT_DIR$/.idea/Practice1_GUI学生管理系统.iml" />
+    </modules>
+  </component>
+</project>

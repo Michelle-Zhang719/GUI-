@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="stage1-demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GUI-stage1说明文档/stage1-demo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
