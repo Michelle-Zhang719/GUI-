@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GUI-stage1说明文档/manager-gui2-student" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GUI-stage2说明文档/manager-gui2-student" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GUI-stage3说明文档/manager-gui2-student" vcs="Git" />
