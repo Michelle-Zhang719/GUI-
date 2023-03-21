@@ -2,6 +2,8 @@ package com.cskaoyan.javase.swing.manager.stage6.controller;
 
 import com.cskaoyan.javase.swing.manager.stage6.model.Student;
 
+import java.io.IOException;
+
 
 /**
  * 与学生信息相关的,业务操作接口
@@ -38,5 +40,5 @@ public interface StudentController {
     int updateStudentByStuId(String targetStuId, Student stu);
 
     // 保存内存中的学生数组数据到文件中
-    boolean saveDataToFile();
+    boolean saveDataToFile() throws IOException;
 }

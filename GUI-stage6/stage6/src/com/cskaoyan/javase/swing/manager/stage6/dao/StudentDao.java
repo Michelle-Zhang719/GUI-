@@ -2,6 +2,8 @@ package com.cskaoyan.javase.swing.manager.stage6.dao;
 
 import com.cskaoyan.javase.swing.manager.stage6.model.Student;
 
+import java.io.IOException;
+
 /**
  * 与Student学生数据相关的，数据操作的接口
  *
@@ -37,5 +39,5 @@ public interface StudentDao {
     int updateStudentByStuId(String targetStuId, Student stu);
 
     // 将内存中的学生数组保存到文件中
-    boolean saveDataToFile();
+    boolean saveDataToFile() throws IOException;
 }

@@ -11,8 +11,8 @@ import java.io.IOException;
 /**
  * 与学生Student相关的，所有数据处理都在该类下进行
  *
- * @since 14:26
  * @author wuguidong@cskaoyan.onaliyun.com
+ * @since 14:26
  */
 public class StudentDaoImpl implements StudentDao {
 
@@ -48,13 +48,14 @@ public class StudentDaoImpl implements StudentDao {
 
     /**
      * 数组无法真正删除一个存储单元,所以将对象置为null
-     *      将这个逻辑视为删除一条学生信息
-     *      删除成功(对象置为null成功)就返回true
-     *      构造就返回false
-     * @since 10:04
+     * 将这个逻辑视为删除一条学生信息
+     * 删除成功(对象置为null成功)就返回true
+     * 构造就返回false
+     *
      * @param id 学生id
      * @return boolean
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 10:04
      */
     @Override
     public boolean delStudent(String id) {
@@ -74,10 +75,11 @@ public class StudentDaoImpl implements StudentDao {
 
     /**
      * 检查id是否重复,true表示id重复,false为不重复
-     * @since 18:09
+     *
      * @param id 传入学生id
      * @return boolean true表示id重复,false为不重复
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 18:09
      */
     @Override
     public boolean checkStuIdRepeat(String id) {
@@ -92,10 +94,11 @@ public class StudentDaoImpl implements StudentDao {
 
     /**
      * 插入,由于数组长度不可改变，所以将null变为一个对象
-     * @since 14:26
+     *
      * @param stu 非空学生
      * @return boolean
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 14:26
      */
     @Override
     public boolean addStudent(Student stu) {
@@ -110,10 +113,11 @@ public class StudentDaoImpl implements StudentDao {
 
     /**
      * 通过id查询学生,如果没查到就返回null
-     * @since 20:43
+     *
      * @param stuId 检索目标id
      * @return Student
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 20:43
      */
     @Override
     public Student getStudentByStuId(String stuId) {
@@ -129,10 +133,11 @@ public class StudentDaoImpl implements StudentDao {
 
     /**
      * 通过name查询学生,如果没查到就返回null。由于查到的学生记录可能不止一条，所以需要一个学生数组存放
-     * @since 12:38
+     *
      * @param name 检索目标name
      * @return Student[]
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 12:38
      */
     @Override
     public Student[] getStudentByName(String name) {
@@ -165,12 +170,13 @@ public class StudentDaoImpl implements StudentDao {
      * 通过id修改学生的某个属性
      * 通过id确定修改的是哪个学生
      * 通过传入的列数确定修改的数据是什么
-     * @since 22:07
+     *
      * @param targetStuId 目标id
-     * @param targetCol 目标列
-     * @param newValue 目标值
+     * @param targetCol   目标列
+     * @param newValue    目标值
      * @return boolean
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 22:07
      */
     @Override
     public boolean updateStuFieldByStuId(String targetStuId, int targetCol, String newValue) {
@@ -228,14 +234,15 @@ public class StudentDaoImpl implements StudentDao {
     /**
      * 通过id修改一条学生信息,相当于在数组中用传入的学生对象替代原本的学生对象
      * 方法返回一个int状态值表示结果:
-     *      0: 表示成功修改
-     *      1: 表示数据完全一致,禁止修改
-     *      2: 未找到该学生,修改失败
-     * @since 13:30
+     * 0: 表示成功修改
+     * 1: 表示数据完全一致,禁止修改
+     * 2: 未找到该学生,修改失败
+     *
      * @param targetStuId 目标id
-     * @param stu 新的学生对象
+     * @param stu         新的学生对象
      * @return boolean
      * @author wuguidong@cskaoyan.onaliyun.com
+     * @since 13:30
      */
     @Override
     public int updateStudentByStuId(String targetStuId, Student stu) {
@@ -259,17 +266,27 @@ public class StudentDaoImpl implements StudentDao {
         return 2;
     }
 
-    /*
+    /**
+     * 保存成功返回true
      *
-     * 创建日期：2021/12/27 16:47
      * @return boolean
-     * @author 景天
+     * @author MinjieZhang
+     * @date 2023/03/21 13:58
      */
     @Override
-    public boolean saveDataToFile() {
-        // TODO 补全代码
-        return false;
+    public boolean saveDataToFile() throws IOException {
+        //创建输出流对象
+        BufferedWriter out = new BufferedWriter(new FileWriter("GUI-stage6/stage6/students.txt"));
+        //拿到数组中真实数据
+        Student[] real = getRealStudents();
+
+        for (int i = 0; i < real.length; i++) {
+            String realStudents = real[i].toString();
+            out.write(realStudents);
+            out.write("\r\n");
+            out.flush();
+        }
+        out.close();
+        return true;
     }
-
-
 }

@@ -5,6 +5,8 @@ import com.cskaoyan.javase.swing.manager.stage6.dao.StudentDao;
 import com.cskaoyan.javase.swing.manager.stage6.dao.impl.StudentDaoImpl;
 import com.cskaoyan.javase.swing.manager.stage6.model.Student;
 
+import java.io.IOException;
+
 /**
  * 与学生信息相关的,业务操作的具体实现
  * @since 19:30
@@ -178,7 +180,7 @@ public class StudentControllerImpl implements StudentController {
      * @author 景天
      */
     @Override
-    public boolean saveDataToFile() {
+    public boolean saveDataToFile() throws IOException {
         return studentDao.saveDataToFile();
     }
 
