@@ -10,6 +10,8 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
 
+    //idea自动生成uid
+    private static final long serialVersionUID = 5654719364775867663L;
     // 学号
     private String stuId;
     // 姓名

@@ -258,16 +258,39 @@ public class StudentDaoImpl implements StudentDao {
         return 2;
     }
 
-    /*
+
+    /**
      * 将数组对象直接通过writeObject(Object obj)写入文件 进行序列化
-     * 创建日期：2021/12/27 16:47
      * @return boolean
-     * @author 景天
+     * @author MinjieZhang
+     * @date 2023/03/22 15:09
      */
     @Override
     public boolean saveDataToFile() {
-        // TODO 补全代码
-        return false;
+        ObjectOutputStream out = null;
+        try {
+            // 创建输出流对象
+            out = new ObjectOutputStream(new FileOutputStream(StudentData.studentFile));
+            // 直接写入数组对象
+            out.writeObject(StudentData.STUDS);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }finally {
+            // 关闭资源
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 
